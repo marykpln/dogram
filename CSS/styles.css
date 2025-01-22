@@ -5,6 +5,12 @@ html {
 h2 {
   margin: 0;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
 .gallery--item_image {
   width: 15rem;
   height: 15rem;
