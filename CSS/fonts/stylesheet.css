@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "airstreamregular";
+  src: url("Airstream-webfont.woff2") format("woff2"),
+    url("Airstream-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lakeshoredriveregular";
+  src: url("LAKESHOR-webfont.woff2") format("woff2"),
+    url("LAKESHOR-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}

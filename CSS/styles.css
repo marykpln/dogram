@@ -24,6 +24,7 @@ h2 {
 }
 .detailedContainer {
   position: relative;
+  display: block;
 }
 .detailedContainer--image {
   width: 30rem;
@@ -47,8 +48,14 @@ h2 {
   font-size: 2rem;
   bottom: 1rem;
   left: 3rem;
-  background-color: blue;
+  background-color: purple;
   color: white;
+  font-family: "airstreamregular";
+  font-weight: normal;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .gallery--item_image {
   width: 12rem;
@@ -69,7 +76,10 @@ h2 {
   display: block;
   width: 12rem;
   height: 3rem;
-  font-size: 2rem;
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
   background-color: aliceblue;
   text-align: center;
 }
@@ -85,6 +95,8 @@ h2 {
   margin-top: 10px;
 }
 .logo {
+  font-family: "lakeshoredriveregular";
+  font-weight: bold;
   font-size: 3rem;
   text-align: center;
   background-color: azure;
@@ -151,35 +163,50 @@ h2 {
 
 @media screen and (min-width: 700px) {
   .detailedContainer {
-    margin-top: 30rem;
+    margin-top: 25rem;
   }
   .detailedContainer--image {
-    width: 52rem;
-    height: 50rem;
+    width: 55rem;
+    height: 40rem;
   }
 
   .detailedContainer--title {
-    bottom: 15rem;
+    bottom: 30rem;
+    width: 50rem;
+    font-weight: 600;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1000px) {
   body {
     background: url(../images/bermuda-square\ copy.svg);
+    overflow-y: hidden;
   }
   .detailedFrame {
-    margin-top: 5rem;
+    margin-top: 0rem;
+  }
+
+  .detailedContainer {
+    margin-top: 20rem;
   }
   .detailedContainer--image {
     width: 80rem;
-    height: 60rem;
+    height: 40rem;
+    bottom: 50rem;
   }
   .detailedContainer--title {
     width: 50rem;
     position: absolute;
     font-size: 5rem;
-    bottom: 2rem;
+    bottom: 10rem;
     left: 7rem;
   }
+  .detailedContainer--title:hover {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
   .gallery--item_image {
     width: 25rem;
     height: 15rem;
@@ -189,11 +216,12 @@ h2 {
     max-height: 85vh;
     padding-right: 3rem;
     margin-left: 4rem;
+    overflow-x: hidden;
   }
   .gallery--item_title {
     display: block;
     width: 25rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: aliceblue;
     text-align: center;
   }
