@@ -57,6 +57,11 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.for_ellipsis {
+  display: block;
+}
+
 .gallery--item_image {
   width: 12rem;
   height: 10rem;

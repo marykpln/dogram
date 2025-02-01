@@ -17,9 +17,6 @@ function setDetails(gelleryItem) {
   console.log(titleElement);
   if (imageElement) {
     detailedImage.src = imageElement.src;
-
-    detailedImage.classList.remove("animation-image");
-    detailedImage.classList.add("animation-image");
     addAnimation(detailedImage);
   }
 
