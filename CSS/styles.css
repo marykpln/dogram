@@ -42,7 +42,7 @@ h2 {
   );
 }
 .detailedContainer--title {
-  display: block;
+  display: inline-block;
   width: 20rem;
   position: absolute;
   font-size: 2rem;
@@ -207,9 +207,9 @@ h2 {
     left: 7rem;
   }
   .detailedContainer--title:hover {
-    white-space: normal;
+    white-space: initial;
     overflow: visible;
-    text-overflow: unset;
+    text-overflow: initial;
   }
 
   .gallery--item_image {
