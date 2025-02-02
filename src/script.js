@@ -11,14 +11,14 @@ function addAnimation(element) {
   });
 }
 
-function setDetails(gelleryItem) {
-  const imageElement = gelleryItem.querySelector(".gallery--item_image");
+function setDetails(galleryItem) {
+  const imageElement = galleryItem.querySelector(".gallery--item_image");
   // const titleElement = gelleryItem.getAttribute("data-detailed-text");
   // console.log(titleElement);
   detailedImage.src = imageElement.src;
   addAnimation(detailedImage);
 
-  detailedTitle.innerHTML = gelleryItem.getAttribute("data-detailed-text");
+  detailedTitle.innerHTML = galleryItem.getAttribute("data-detailed-text");
   detailedTitle.classList.remove("gallery--item");
   detailedTitle.classList.add("detailedContainer--title");
   addAnimation(detailedTitle);
