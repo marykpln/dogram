@@ -13,19 +13,15 @@ function addAnimation(element) {
 
 function setDetails(gelleryItem) {
   const imageElement = gelleryItem.querySelector(".gallery--item_image");
-  const titleElement = gelleryItem.getAttribute("data-detailed-text");
-  console.log(titleElement);
-  if (imageElement) {
-    detailedImage.src = imageElement.src;
-    addAnimation(detailedImage);
-  }
+  // const titleElement = gelleryItem.getAttribute("data-detailed-text");
+  // console.log(titleElement);
+  detailedImage.src = imageElement.src;
+  addAnimation(detailedImage);
 
-  if (titleElement) {
-    detailedTitle.innerHTML = gelleryItem.getAttribute("data-detailed-text");
-    detailedTitle.classList.remove("gallery--item");
-    detailedTitle.classList.add("detailedContainer--title");
-    addAnimation(detailedTitle);
-  }
+  detailedTitle.innerHTML = gelleryItem.getAttribute("data-detailed-text");
+  detailedTitle.classList.remove("gallery--item");
+  detailedTitle.classList.add("detailedContainer--title");
+  addAnimation(detailedTitle);
 }
 
 // for (let i = 0; i < galleryElements.length; i++) {
