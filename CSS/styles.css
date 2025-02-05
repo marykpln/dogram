@@ -208,8 +208,9 @@ h2 {
   }
   .detailedContainer--title:hover {
     white-space: initial;
-    overflow: visible;
+    overflow: scroll;
     text-overflow: initial;
+    max-height: 5em;
   }
 
   .gallery--item_image {
