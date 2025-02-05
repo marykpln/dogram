@@ -1,5 +1,14 @@
+:root {
+  --base-size: 62.5%;
+  --gallery-item-width: 12rem;
+  --gallery-item-height: 10rem;
+  --detailed-image-width: 30rem;
+  --detailed-image-height: 25rem;
+  --border-radius: 40px;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: var(--base-size);
 }
 body {
   margin: 0;
@@ -27,8 +36,8 @@ h2 {
   display: block;
 }
 .detailedContainer--image {
-  width: 30rem;
-  height: 25rem;
+  width: var(--detailed-image-width);
+  height: var(--detailed-image-height);
   object-fit: cover;
   clip-path: polygon(
     30% 0%,
@@ -43,7 +52,7 @@ h2 {
 }
 .detailedContainer--title {
   display: inline-block;
-  width: 20rem;
+  width: 30ch;
   position: absolute;
   font-size: 2rem;
   bottom: 1rem;
@@ -63,14 +72,14 @@ h2 {
 }
 
 .gallery--item_image {
-  width: 12rem;
-  height: 10rem;
+  width: var(--gallery-item-width);
+  height: var(--gallery-item-height);
   object-fit: cover;
 }
 .gallery {
   list-style: none;
   max-height: 50vh;
-  width: 30rem;
+  width: var(--detailed-image-width);
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +88,7 @@ h2 {
 }
 .gallery--item_title {
   display: block;
-  width: 12rem;
+  width: var(--gallery-item-width);
   height: 3rem;
   font-family: "Open Sans", serif;
   font-weight: 600;
@@ -93,7 +102,7 @@ h2 {
 }
 .gallery--item {
   border: 2px solid lightgrey;
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   overflow: hidden;
   min-width: 12rem;
   max-height: 15rem;
@@ -113,13 +122,14 @@ h2 {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
+
   .detailedContainer--title {
     bottom: 3rem;
   }
 
   .gallery--item_image {
-    width: 12rem;
-    height: 10rem;
+    width: var(--gallery-item-width);
+    height: var(--gallery-item-height);
   }
   .gallery {
     max-height: 80vh;
@@ -131,36 +141,7 @@ h2 {
   }
 
   .gallery--item {
-    min-width: 12rem;
-    min-height: 13rem;
-    max-height: 13rem;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .main {
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-  }
-  .detailedContainer--title {
-    bottom: 3rem;
-  }
-
-  .gallery--item_image {
-    width: 12rem;
-    height: 10rem;
-  }
-  .gallery {
-    max-height: 80vh;
-    width: auto;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    padding-left: 4rem;
-    justify-content: flex-start;
-  }
-
-  .gallery--item {
-    min-width: 12rem;
+    min-width: var(--gallery-item-width);
     min-height: 13rem;
     max-height: 13rem;
   }
@@ -192,12 +173,12 @@ h2 {
   }
 
   .detailedContainer {
-    margin-top: 20rem;
+    margin-top: 10rem;
   }
   .detailedContainer--image {
     width: 80rem;
-    height: 40rem;
-    bottom: 50rem;
+    height: 60rem;
+    bottom: 60rem;
   }
   .detailedContainer--title {
     width: 50rem;
